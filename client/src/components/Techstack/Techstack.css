@@ -1,0 +1,22 @@
+/* Techstack.css */
+
+.techstack-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  
+  .techstack-row {
+    display: flex;
+    flex-wrap: wrap;
+    /* max-width: 800px; */
+    justify-content: center;
+  }
+  
+  .techstack-icon {
+    display: flex;
+    
+    margin: 20px;
+    font-size: 60px;
+  }
+  

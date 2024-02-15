@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
+import navlogo from "../../Assets/navlogo.png"
 import "./topbar.css";
 
 export default function TopBar() {
@@ -13,10 +14,12 @@ export default function TopBar() {
   return (
     <div className="top">
       <div className="topLeft">
-        <i className="topIcon fab fa-facebook-square"></i>
+        {/* <i className="topIcon fab fa-facebook-square"></i>
         <i className="topIcon fab fa-twitter-square"></i>
         <i className="topIcon fab fa-pinterest-square"></i>
-        <i className="topIcon fab fa-instagram-square"></i>
+        <i className="topIcon fab fa-instagram-square"></i> */}
+
+        <img src={navlogo} alt="" className = "logo-img" />
       </div>
       <div className="topCenter">
         <ul className="topList">
