@@ -1,0 +1,66 @@
+/* TestimonialsCarousel.css */
+.testimonials-carousel {
+    margin: 40px auto; /* Center align carousel and give margin from features */
+    width: calc(100% - 40px); /* Set slider width to fit the page */
+    
+  }
+  
+  .testimonials-title {
+    text-align: center;
+  }
+  
+  .testimonial-slide {
+    text-align: center;
+  }
+  
+  .testimonial-image {
+    width: 100%; /* Set image width to 100% */
+    max-width: 200px; /* Set maximum image width */
+    height: 200px; /* Set image height to enforce square aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border-radius: 8px;
+    margin: 0 auto; /* Center align image */
+  }
+  
+  .testimonial-text {
+    margin-top: 20px;
+  }
+  
+  .testimonial-author {
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  /* Styles for the slider dots */
+  .slick-dots {
+    position: absolute;
+    bottom: -30px; /* Adjust as needed */
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .slick-dots li button {
+    font-size: 14px;
+    line-height: 1;
+    color: #999;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .slick-dots li button:hover {
+    color: #333;
+  }
+  
+  .slick-dots li.slick-active button {
+    color: #333;
+  }
+  

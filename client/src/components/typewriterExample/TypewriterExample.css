@@ -1,0 +1,11 @@
+.TypewriterExample {
+    color: #54e668; /* Yellow color that suits black background */
+    font-size: 80px; /* Adjust the font size as needed */
+    font-family: 'Arial', sans-serif; /* Use any desired font family */
+    margin-bottom: 50px; /* Add some margin from the left */
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

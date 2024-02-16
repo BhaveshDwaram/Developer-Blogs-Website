@@ -1,0 +1,68 @@
+.banner-container {
+  /* Dark green color */
+  color: #fff;
+  /* Set text color to white for good contrast */
+  padding: 30px;
+  /* Add padding around content */
+  display: flex;
+  /* Use Flexbox layout */
+  justify-content: space-between;
+  /* Align items with space between them */
+  border-radius: 20px;
+  /* Make container borders round */
+  overflow: hidden;
+  /* Ensure content does not overflow rounded borders */
+}
+
+.banner-content {
+  text-align: left;
+  /* Align text to the left */
+  max-width: 70%;
+  /* Limit the maximum width of the content */
+
+}
+
+.banner-title {
+  font-size: 4rem;
+  /* Set title font size */
+  margin-bottom: 40px;
+  /* Add space below title */
+  color: #54e668;
+  margin-left: 80px;
+}
+
+.banner-section-total {
+  display: flex;
+  /* Use Flexbox layout */
+  margin-left: 80px;
+}
+
+.banner-section {
+  flex: 1;
+  /* Allow sections to grow and fill available space */
+  margin-right: 90px;
+  /* Add space between sections */
+  border-top: solid #ffffff;
+
+}
+
+.banner-subtitle {
+  font-size: 1.6rem;
+  /* Set subtitle font size */
+  margin-bottom: 15px;
+  /* Add space below each subtitle */
+  color: #54e668;
+
+}
+
+.banner-image {
+  margin-left: 20px;
+  /* Add margin to separate the image from the content */
+}
+
+.logo-img {
+  max-width: 150px;
+  /* Set maximum width for the image */
+  max-height: 150px;
+  /* Set maximum height for the image */
+}

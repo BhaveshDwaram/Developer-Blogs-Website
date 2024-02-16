@@ -1,12 +1,16 @@
 .top {
   width: 100%;
   height: 70px;
-  background-color: grey;
+  background-color:black;
   top: 0;
   display: flex;
   align-items: center;
-  font-family: "Josefin Sans", sans-serif;
+  font-family:  sans-serif;
   z-index: 999;
+  color: white;
+  border-bottom: 2px solid #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .topLeft,
@@ -17,10 +21,17 @@
   justify-content: center;
 }
 
+.topRight  :hover{
+  color: #45a049;
+}
+
+
 .topCenter {
   flex: 6;
 }
-
+.topCenter :hover {
+  color: #45a049;
+}
 .topIcon {
   font-size: 20px;
   margin-right: 10px;

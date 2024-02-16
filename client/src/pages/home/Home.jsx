@@ -1,29 +1,30 @@
-import { useEffect, useState } from "react";
-import Header from "../../components/header/Header";
-import Posts from "../../components/posts/Posts";
-import Sidebar from "../../components/sidebar/Sidebar";
-import "./home.css";
-import axios from "axios";
-import { useLocation } from "react-router";
 
-export default function Home() {
-  const [posts, setPosts] = useState([]);
-  const { search } = useLocation();
+import Testimonials from '../../components/testimonials/Testimonials'
+import Techstack from '../../components/techstack/Techstack'
+import Banner from '../../components/banner/Banner'
+import TypewriterExample from '../../components/typewriterExample/TypewriterExample'
+import FeatureComponent from '../../components/features/Features'
+import React, { useState } from 'react';
 
-  useEffect(() => {
-    const fetchPosts = async () => {
-      const res = await axios.get("/posts" + search);
-      setPosts(res.data);
-    };
-    fetchPosts();
-  }, [search]);
+const Homing = () => {
+  const [typewriterCompleted, setTypewriterCompleted] = useState(false);
   return (
-    <>
-      <Header />
-      <div className="home">
-        <Posts posts={posts} />
-        <Sidebar />
-      </div>
-    </>
-  );
+    <div className='Hometext'>
+        {!typewriterCompleted ? (
+        <div className="TypewriterExample">
+          <TypewriterExample onComplete={() => setTypewriterCompleted(true)} />
+        </div>
+      ) : (
+        <div>
+          <Banner />
+          <FeatureComponent />
+          <Techstack/>
+          <Testimonials />
+          
+        </div>
+      )}
+    </div>
+  )
 }
+
+export default Homing
