@@ -3,8 +3,18 @@
 .techstack-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     padding-bottom: 50px;
-    background-color: white;
+    background-color: black;
+    padding: 5%;
+  }
+
+  .techstack-heading{
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    margin-bottom: 20px;
+    font-size: 50px;
   }
   
   .techstack-row {
@@ -16,8 +26,8 @@
   
   .techstack-icon {
     display: flex;
-    
+    color: aliceblue;
     margin: 20px;
-    font-size: 60px;
+    font-size: 80px;
   }
   

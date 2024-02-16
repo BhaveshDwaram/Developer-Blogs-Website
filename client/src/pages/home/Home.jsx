@@ -1,6 +1,6 @@
 
 import Testimonials from '../../components/testimonials/Testimonials'
-import Techstack from '../../components/techstack/Techstack'
+import Techstack from '../../components/Techstack/Techstack'
 import Banner from '../../components/banner/Banner'
 import TypewriterExample from '../../components/typewriterExample/TypewriterExample'
 import FeatureComponent from '../../components/features/Features'
@@ -16,13 +16,15 @@ const Homing = () => {
         </div>
       ) : (
         <div>
+          
           <Banner />
-          <FeatureComponent />
-          <Techstack/>
-          <Testimonials />
           
         </div>
       )}
+      
+      <FeatureComponent />
+          <Techstack/>
+          <Testimonials />
     </div>
   )
 }

@@ -21,12 +21,10 @@ import {
 function Techstack() {
   return (
     <div className="techstack-container">
+      <h2 className="techstack-heading">Technologies</h2>
       <div className="techstack-row">
-        <div className="techstack-icon">
-            <FaMeta /> 
-        </div>
-        <div className="techstack-icon">
-        <FcGoogle /></div>
+        <div className="techstack-icon"><FaMeta /> </div>
+        <div className="techstack-icon"><FcGoogle /></div>
         <div className="techstack-icon"><FaAmazon /></div>
         <div className="techstack-icon"><FaMicrosoft /></div>
         <div className="techstack-icon"><DiMongodb /></div>

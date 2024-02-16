@@ -57,6 +57,8 @@
   }
   
   .slick-dots li button:hover {
+    position: relative;
+    left: 5px;
     color: #333;
   }
   

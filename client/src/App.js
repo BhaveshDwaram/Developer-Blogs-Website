@@ -8,7 +8,7 @@ import Register from "./pages/register/Register";
 import { BrowserRouter as Router, Switch, Route,  } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
-import Home from "./pages/home/home";
+import Home from "./pages/home/Home";
 import Particles from "../src/components/particles/Particles"
 import Footer from "../src/components/Footer/Footer"
 
