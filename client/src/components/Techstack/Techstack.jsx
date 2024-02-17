@@ -21,7 +21,7 @@ import {
 function Techstack() {
   return (
     <div className="techstack-container">
-      <h2 className="techstack-heading">Technologies</h2>
+      <h2 className="techstack-heading">The go-to platform for top developers from leading companies.</h2>
       <div className="techstack-row">
         <div className="techstack-icon"><FaMeta /> </div>
         <div className="techstack-icon"><FcGoogle /></div>
