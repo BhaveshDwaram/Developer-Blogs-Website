@@ -11,6 +11,8 @@ import { Context } from "./context/Context";
 import Home from "./pages/home/Home";
 import Particles from "../src/components/particles/Particles"
 import Footer from "../src/components/Footer/Footer"
+import AboutUs from "./components/About us/Aboutus";
+
 
 function App() {
   const { user } = useContext(Context);
@@ -23,6 +25,7 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
+        <Route path="/About us"><AboutUs /></Route>
         <Route path="/read"><Read /></Route>
         <Route path="/register">{user ? <Read/> : <Register />}</Route>
         <Route path="/login">{user ? <Read /> : <Login />}</Route>

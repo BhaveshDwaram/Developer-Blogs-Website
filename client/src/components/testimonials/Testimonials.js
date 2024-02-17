@@ -14,12 +14,12 @@ import testimonial6 from '../../Assets/testimonial6.jpg';
 
 const TestimonialsCarousel = () => {
   const testimonials = [
-    { id: 1, image: testimonial1, text: "Testimonial 1 Text", author: "John Doe" },
-    { id: 2, image: testimonial2, text: "Testimonial 2 Text", author: "Jane Smith" },
-    { id: 3, image: testimonial3, text: "Testimonial 3 Text", author: "David Johnson" },
-    { id: 4, image: testimonial4, text: "Testimonial 4 Text", author: "Emily Wilson" },
-    { id: 5, image: testimonial5, text: "Testimonial 5 Text", author: "Michael Brown" },
-    { id: 6, image: testimonial6, text: "Testimonial 6 Text", author: "Sarah Lee" },
+    { id: 1, image: testimonial1, text: "Exceptional resource for developers! The insightful content and vibrant community make it a go-to hub for staying updated and connected in the coding world", author: "John Doe, Senior Software " },
+    { id: 2, image: testimonial2, text: "An invaluable asset for developers of all levels. The practical tutorials and engaging discussions have greatly enriched my coding journey", author: "Jane Smith,Frontend Developer" },
+    { id: 3, image: testimonial3, text: "I'm continually impressed by the caliber of content and the supportive atmosphere fostered on this platform. A must-visit for any serious coder", author: "Alex Chen, Open Source Contributor" },
+    { id: 4, image: testimonial4, text: "As someone deeply entrenched in the developer community, I can confidently say that this website stands out for its fresh perspectives and comprehensive resources.", author: "David Kim, Tech Lead" },
+    { id: 5, image: testimonial5, text: "From novices to seasoned pros, this website offers something for everyone. Its user-friendly interface and diverse content make it a staple in my daily coding routine.", author: "Emily Rodriguez, Full Stack Developer" },
+    { id: 6, image: testimonial6, text: "Top-notch content coupled with a supportive community – what more could a developer ask for? This website has become my go-to source for inspiration and knowledge-sharing.", author: "Michael Nguyen, Software Architect" },
   ];
 
   const settings = {

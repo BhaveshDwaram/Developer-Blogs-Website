@@ -30,7 +30,7 @@ export default function TopBar() {
           </li>
           
           <li className="topListItem">
-            <Link className="link" to="/">
+            <Link className="link" to="/about us">
               ABOUT
             </Link>
           </li>
