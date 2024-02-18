@@ -14,12 +14,14 @@
   position: absolute;
   top: 18%;
   font-size: 20px;
+  color: white;
 }
 
 .headerTitleLg {
   position: absolute;
   top: 20%;
   font-size: 100px;
+  color: #a99999;
 }
 
 .headerImg{

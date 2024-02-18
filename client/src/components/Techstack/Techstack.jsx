@@ -5,9 +5,6 @@ import { FaMeta } from "react-icons/fa6";
 import { FaAmazon } from "react-icons/fa";
 import { FaMicrosoft } from "react-icons/fa6";
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
   DiMongodb,
   DiPython,
   DiGit,
