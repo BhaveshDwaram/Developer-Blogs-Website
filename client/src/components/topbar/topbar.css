@@ -73,3 +73,16 @@
   cursor: pointer;
   margin-left: 15px;
 }
+
+.topListItem .button {
+  background-color: #0c5c17;
+  border: none;
+  color: white;
+  padding: 8px 8px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.topListItem .button:hover {
+  background-color: #45a049;
+}

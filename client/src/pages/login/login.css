@@ -10,13 +10,18 @@
     ),
     url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"); */
   background-size: cover;
-  
 }
 
 .loginTitle {
   font-size: 50px;
-  color:#54e668;
-  
+  color: #54e668;
+}
+
+.loginFormContainer {
+  border: 2px solid #ffff; /* Border color */
+  padding: 20px; /* Add padding for better visibility */
+  background-color: rgba(0, 0, 0, 0.5); /* Background color with transparency */
+  border-radius: 10px; /* Border radius */
 }
 
 .loginForm {
@@ -27,8 +32,8 @@
 
 .loginForm > label {
   margin: 10px 0;
-  color :#54e668;
-font-size:20px
+  color: #54e668;
+  font-size: 20px;
 }
 
 .loginInput {
@@ -40,26 +45,36 @@ font-size:20px
 .loginButton {
   margin-top: 20px;
   cursor: pointer;
-  background-color:#54e668;
+  background-color: #54e668;
   border: solid #ffff;
   color: white;
   border-radius: 10px;
   padding: 10px;
 }
 
-.loginButton:disabled{
+.loginButton:disabled {
   cursor: not-allowed;
   background-color: rgb(252, 173, 173);
 }
 
-.loginRegisterButton {
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  background-color: teal;
-  cursor: pointer;
-  border: none;
-  padding: 10px;
-  color: white;
-  border-radius: 10px;
+
+.loginError {
+  color: red;
+  font-size: 20px;
+}
+.registerLink {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.registerLink span {
+  color: white; /* Set text color */
+  text-decoration: underline; /* Underline text */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 20px;
+}
+
+.registerLink span:hover {
+  text-decoration: underline;
+  color: #54e668; /* Change color on hover */
 }

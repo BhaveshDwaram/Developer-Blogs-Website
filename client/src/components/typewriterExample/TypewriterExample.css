@@ -1,16 +1,9 @@
-.TypewriterExample {
-    color: #54e668; /* Yellow color that suits black background */
-    font-size: 80px; /* Adjust the font size as needed */
-    font-family: 'Arial', sans-serif; /* Use any desired font family */
-    margin-bottom: 50px; /* Add some margin from the left */
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.typewriter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #54e668;
+  font-size: 90px;
+}
 
-  .typewriter-container{
-    height: 200px;
-    width: auto;
-  }

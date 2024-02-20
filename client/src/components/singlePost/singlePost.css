@@ -1,99 +1,87 @@
-.singlePost {
-  flex: 9;
-}
-
 .singlePostWrapper {
   padding: 20px;
-  padding-right: 0;
-  display: flex;
-  flex-direction: column;
+  background-color: #0000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .singlePostImg {
-  width: 100%;
-  height: 300px;
-  border-radius: 5px;
-  object-fit: cover;
+  width: 70%;
+  height: 50%;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  
 }
 
 .singlePostTitle {
-  text-align: center;
-  margin: 10px;
+  font-size: 40px;
   font-family: "Lora", serif;
-  font-size: 28px;
-}
-
-.singlePostTitleInput {
-  margin: 10px;
-  font-family: "Lora", serif;
-  font-size: 28px;
-  text-align: center;
-  border: none;
-  color: gray;
-  border-bottom: 1px solid lightgray;
-}
-
-.singlePostTitleInput:focus {
-  outline: none;
+  color: #ffff;
+  margin-bottom: 10px;
 }
 
 .singlePostEdit {
   float: right;
-  font-size: 16px;
+  color: #54e668;
 }
 
 .singlePostIcon {
   margin-left: 10px;
   cursor: pointer;
-}
-
-.singlePostIcon:first-child {
-  color: teal;
-}
-
-.singlePostIcon:last-child {
-  color: tomato;
+  color: #54e668;
+  font-size: 30px;
 }
 
 .singlePostInfo {
   margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 16px;
+  color: #54e668;
+}
+
+.singlePostAuthor,
+.singlePostDate {
+  font-size: 25px;
   font-family: "Varela Round", sans-serif;
-  color: #b39656;
+  color: #54e668;
+  margin-right: 20px;
 }
 
 .singlePostDesc {
-  color: #666;
   font-size: 18px;
-  line-height: 25px;
-}
-
-.singlePostDesc::first-letter {
-  margin-left: 20px;
-  font-size: 30px;
-  font-weight: 600;
+  color:#ffff;
+  line-height: 1.6;
 }
 
 .singlePostDescInput {
-  border: none;
-  color: #666;
+  width: 200%;
+  height: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
   font-size: 18px;
-  line-height: 25px;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+
+  
 }
 
-.singlePostDescInput:focus {
-  outline: none;
-}
 .singlePostButton {
-  width: 100px;
+  padding: 10px 20px;
+  background-color: #54e668;
+  color: #fff;
   border: none;
-  background-color: teal;
-  padding: 5px;
-  color: white;
   border-radius: 5px;
   cursor: pointer;
-  align-self: flex-end;
-  margin-top: 20px;
+  transition: background-color 0.3s ease;
+
+}
+
+.singlePostButton:hover {
+  background-color: #3ba150;
+}
+
+.singlePostHr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ddd;
 }

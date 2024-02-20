@@ -5,6 +5,7 @@
 .settingsWrapper {
   flex: 9;
   padding: 20px;
+  background-color: #1a1a1a; /* Updated background color */
 }
 
 .settingsTitle {
@@ -59,24 +60,34 @@
 .settingsForm > label {
   font-size: 20px;
   margin-top: 20px;
+  color: #54e668; /* Updated label color */
 }
 
-.settingsForm > input {
-  color: gray;
+.settingsForm > input,
+.settingsForm > textarea {
+  color: white;
+  background-color: #363636;
   margin: 10px 0;
-  height: 30px;
   border: none;
-  border-bottom: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+  resize: none; /* Disable textarea resizing */
+  max-height: 200px; /* Set maximum height */
+  overflow-y: auto; /* Add scrollbar when content exceeds max height */
 }
 
-.settingsSubmit{
-    width: 150px;
-    align-self: center;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    background-color: teal;
-    padding: 10px;
-    margin-top: 20px;
-    cursor: pointer;
+.settingsSubmit {
+  width: 150px;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: teal;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.settingsSubmit:hover {
+  background-color: #54e668; /* Updated hover background color */
 }

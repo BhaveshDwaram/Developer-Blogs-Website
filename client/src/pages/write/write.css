@@ -2,6 +2,16 @@
   padding-top: 50px;
 }
 
+.writeHeading {
+  font-size: 60px;
+  color: #54e668;
+  margin-bottom: 20px;
+  position: relative;
+  animation: glow 2s ease infinite alternate; /* Add glow animation */
+  background-color:#1a1a1a;
+  text-align: center;
+}
+
 .writeImg {
   margin-left: 150px;
   width: 70vw;
@@ -11,7 +21,9 @@
 }
 
 .writeForm {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .writeFormGroup {
@@ -37,7 +49,7 @@
   font-size: 30px;
   border: none;
   padding: 20px;
-  width: 70vw;
+  width: 60vw;
 }
 
 .writeInput:focus {
@@ -50,9 +62,9 @@
 }
 
 .writeSubmit {
-  position: absolute;
-  top: 20px;
-  right: 50px;
+  width: 150px;
+  margin-left: 150px;
+  margin-top: 20px;
   color: white;
   background-color: teal;
   padding: 10px;
@@ -60,4 +72,41 @@
   border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(69, 220, 90, 0.5); /* Adjust opacity for reduced brightness */
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(69, 220, 90, 0.5), 0 0 30px rgba(69, 220, 90, 0.5), 0 0 40px rgba(69, 220, 90, 0.5); /* Adjust opacity for reduced brightness */
+  }
+}
+
+/* Add pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Add hover effect */
+
+/* Add overlay animation */
+@keyframes overlay {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.3;
+  }
 }

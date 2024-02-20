@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Switch, Route,  } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
 import Home from "./pages/home/Home";
-import Particles from "../src/components/particles/Particles"
+
 import Footer from "../src/components/Footer/Footer"
 import AboutUs from "./components/About us/Aboutus";
 
@@ -19,17 +19,17 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <Particles id="tsparticles" />
+     
       <TopBar />
       <Switch>
         <Route exact path="/">
           <Home />
         </Route>
         <Route path="/About us"><AboutUs /></Route>
-        <Route path="/read"><Read /></Route>
+        <Route path="/read">{user ? <Read /> : <Login />}</Route>
         <Route path="/register">{user ? <Read/> : <Register />}</Route>
         <Route path="/login">{user ? <Read /> : <Login />}</Route>
-        <Route path="/write">{user ? <Write /> : <Register />}</Route>
+        <Route path="/write">{user ? <Write /> : <Login />}</Route>
         <Route path="/settings">{user ? <Settings /> : <Register />}</Route>
         <Route path="/post/:postId">
           <Single />

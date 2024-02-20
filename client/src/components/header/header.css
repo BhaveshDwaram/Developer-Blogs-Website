@@ -1,32 +1,76 @@
 .header {
-  margin-top: 60px;
+  background-color: #000;
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+  position: relative;
 }
 
-.headerTitles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Lora", serif;
-  color: #444;
+.headerTitle {
+  font-size: 60px;
+  color: #54e668;
+  margin-bottom: 20px;
+  position: relative;
+  animation: glow 2s ease infinite alternate; /* Add glow animation */
+  background-color:#1a1a1a;
 }
 
-.headerTitleSm {
+.headerSubtitle {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+/* Add glow animation */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(69, 220, 90, 0.5); /* Adjust opacity for reduced brightness */
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(69, 220, 90, 0.5), 0 0 30px rgba(69, 220, 90, 0.5), 0 0 40px rgba(69, 220, 90, 0.5); /* Adjust opacity for reduced brightness */
+  }
+}
+
+/* Add pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Add hover effect */
+.header:hover .headerTitle {
+  animation: pulse 0.5s ease infinite; /* Add pulse animation on hover */
+}
+
+/* Add overlay animation */
+.header::after {
+  content: '';
+  background: radial-gradient(circle, transparent 30%, #000 70%); /* Create radial gradient overlay */
   position: absolute;
-  top: 18%;
-  font-size: 20px;
-  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  pointer-events: none; /* Ensure the overlay doesn't block interaction */
+  animation: overlay 4s ease infinite; /* Add overlay animation */
 }
 
-.headerTitleLg {
-  position: absolute;
-  top: 20%;
-  font-size: 100px;
-  color: #a99999;
-}
-
-.headerImg{
-    width: 100%;
-    height: 450px;
-    margin-top: 80px;
-    object-fit: cover;
+/* Add overlay animation */
+@keyframes overlay {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.3;
+  }
 }

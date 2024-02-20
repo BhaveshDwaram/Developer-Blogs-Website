@@ -14,7 +14,14 @@
 
 .registerTitle {
   font-size: 50px;
-  color:#54e668;
+  color: #54e668;
+}
+
+.registerFormContainer {
+  border: 2px solid #fff; /* Border color */
+  padding: 20px; /* Add padding for better visibility */
+  background-color: rgba(0, 0, 0, 0.5); /* Background color with transparency */
+  border-radius: 10px; /* Border radius */
 }
 
 .registerForm {
@@ -25,8 +32,8 @@
 
 .registerForm > label {
   margin: 10px 0;
-  color :#54e668;
-  font-size:20px
+  color: #54e668;
+  font-size: 20px;
 }
 
 .registerInput {
@@ -38,21 +45,32 @@
 .registerButton {
   margin-top: 20px;
   cursor: pointer;
-  background-color:#54e668;
+  background-color: #54e668;
   border: solid #ffff;
   color: white;
   border-radius: 10px;
   padding: 10px;
 }
 
-.registerLoginButton {
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  background-color: lightcoral;
+
+
+.registerError {
+  color: red;
+  font-size: 20px;
+}
+
+.loginLink {
+  margin-top: 20px;
+}
+
+.loginLink span {
   cursor: pointer;
-  border: none;
-  padding: 10px;
-  color: white;
-  border-radius: 10px;
+  color: #ffff; /* Default link color */
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.loginLink span:hover {
+  text-decoration: underline;
+  color: #54e668; /* Change color on hover */
 }
