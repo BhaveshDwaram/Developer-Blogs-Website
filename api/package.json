@@ -14,7 +14,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "build": "npm i"
+     "build": "webpack --config=Scripts/config/webpack.prod.js"
   },
   "author": "",
   "license": "ISC",
